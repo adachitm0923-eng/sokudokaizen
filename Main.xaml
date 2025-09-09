@@ -1,0 +1,169 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1379,1301" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Edge 乗換案内、時刻表、運行情報 - Yahoo!路線情報" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1278" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="082dddfe-18b0-41fe-941e-19456791828b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="450,1037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="TextString" />
+              <Variable x:TypeArguments="x:Boolean" Name="検出された要素" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="赤池" Version="V5">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp" CVScreenId="e625e3ea-569c-4265-b68f-d9608b8f726a" ContentHash="mae1nT4eik-xMHCf9RBv0w" DesignTimeRectangle="282, 470, 228, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='query_input' tag='INPUT' type='text' idx='1' /&gt;" Guid="39738a82-0d1c-4efc-810b-249587b48df7" InformativeScreenshot="5f1ce8a5686cee0675ba90fd6b136d48.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/Xrc0g4pyCEWc9okQVyZYKw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NSetText.Target>
+            </uix:NSetText>
+            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="名古屋" Version="V5">
+              <uix:NSetText.Target>
+                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp" CVScreenId="c66061bb-94d9-439e-bd66-a0064273b89a" ContentHash="EFSsWRYKA0OJ8T_6T_zFMg" DesignTimeRectangle="597, 470, 228, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='query_input' name='to' tag='INPUT' type='text' /&gt;" Guid="5453e194-ca42-4ea2-93c9-7ae3d4960a8f" InformativeScreenshot="e39cf07b37bdb84f741a28ec20aa4ef2.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/dOLuj0J2HkmHfxp88MrEwQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NSetText.Target>
+            </uix:NSetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="クリック '検索'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp" CVScreenId="c66061bb-94d9-439e-bd66-a0064273b89a" ContentHash="tciCx4CphE2u38gcxotCCA" DesignTimeRectangle="215, 554, 230, 33" ElementType="Button" FullSelectorArgument="&lt;webctrl id='searchModuleSubmit' tag='INPUT' aaname='検索' type='submit' /&gt;" Guid="3df8f9ea-2a7f-41d8-9498-f5549077aaaf" InformativeScreenshot="7a150925c456a7479de30ecc87274957.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/XjGg3QxvNk2f_PrvkTLw7A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DelayBefore="3" DisplayName="テキストを取得" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" ScrapingOptions="None" TextString="[TextString]" Version="V5">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp/search/result" CVScreenId="6fb031ea-ab6b-46ed-87e0-d33eb34eeabf" ContentHash="U0HKJ__CeUuxbG1ORm5t7Q" DesignTimeRectangle="839, 371, 46, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mark' parentid='rsltlst' tag='SPAN' type='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;" Guid="862b6f56-9035-493d-97ce-b34894c8403f" ImageBase64="" InformativeScreenshot="49bb2143eb3b3a7cbe19faf8e432dd70.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/GQ4ze0vw3kurSqEu56RugQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='今池(愛知県)から伏見(愛知県)への乗換案内 - Yahoo!路線情報' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target CVScreenId="e8328be4-7add-4605-8df6-55bd614686c0" DesignTimeRectangle="498, 364, 73, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='rsltlst' tag='A' type='' class='' aaname='ルート1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ルート1' /&gt;" Guid="a633b1aa-7e0b-4f30-a37b-1fed3992b45a" SearchSteps="FuzzySelector" />
+                      <uix:Target CVScreenId="e8328be4-7add-4605-8df6-55bd614686c0" CvTextArea="564, 334, 92, 21" CvTextArgument="DIAB3*" CvType="Text" DesignTimeRectangle="539, 333, 115, 27" FuzzySelectorArgument="&lt;webctrl parentid='tabflt' tag='SPAN' type='' class='' aaname='到着時刻順' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='早到着時刻順' /&gt;" Guid="789d5d01-f2e5-4d87-8d5a-e50dfaa5361a" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[TextString]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="etkb4Et6U0S7fhEGCgKplA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPkSURBVHhe7ZlbyGZTHMYfhzSDHEITkUNOoUYeGqfEFUkTSTKa3Mg0OcyFuRqRogY3LhzHtUg0k6S5cIokLkxMTRinEBfGmSE5PPprvbW+p//7vvv93sP3xfrV09f37v9pr733f629NtBoNBqNRqPRaDQajcb/D4E7BGqKusNzLioE/pQUPUld4TkXFQJXC7xL4BMC3xL4TXISgxQD+IzABwTeLvAmgdcKvFQgASzxnIsegQcLPFvgpuSEXX8IPNNjLDQCzxH4psANAk/1450RuDE5adf7Avdz32EIfFDglgnqtir2vVbjxwLvF3ghgL3nVjIEgQ8lJ+16zP2GIfDZJM589YvAE6vY7yU2PX0r8HGBV82tqD97CXw6CeS62h0HIXC5wDUC7yl95B2BvyZx++nz4he3+Yoq7gmJbaYn51Y0mKUCX0+C1PpB4HHuOCJ7ClyVxA5Fv3lE4OUCD3fHHgLXJ76uHwfFSBF4mMBPkmC1to3T+UsDjp7icWO9crrbZwh8LfF33ex+nRB4crnSHrDWo+7XBYEHls6dxVvq9hkCDxX4ZxKj1rsjN8IagZd0SLLa/QYh8AiB2y3GzwKvcdtBCLwuqcV1gfuNjMBbk8C1dgs8zf0ySjOMhlb7fyDwFLcdhsDNSS21Rmp8AylTiSeotTNua/erEbiyXOna7zmBB7ltB5aU6dDr6CmOHelO4xAzw7YkUa3NAPZwx/itTF9/mf3GmAncuAtl+e35a21wn7EReHRZWHiyWuvNZ1+BT5nN76P2DWfI0v2jcWangQi8OLmStWL+Pq/YRrN7245/P4HGFHfUV0nunla6w0QReGeStNYXMQjlr/8+/5eVgsCzkpw9bXX7aRDL5ReT5LX+tv8/nMDK8V8E3p3kC8WjdZLbT4VYWgrclRSRKa78UR5jviRriJ7uc9upEm9YSRGuuCqdlrVdEHhskiMUPeEAt586Ar9Miqn1gvuMg8B1SY7QWLPKvBH4aVJMrS3uMw4CX05yvNFn/TF9ZjkA5e0xptk6fkzJZ7jtzJjxAGR7B5vcbqbMeACWCbxB4PMCfxP4XexbuN1MmeUA1AjcP/Yr/PeZs1ADsGhIlruul9xnRPYpH2CW+YEFR+AxHXaLXnG/UShfsyJO5Nkq8MZ6S3xBKK/FawV+lpywKx6RW8qJXCbw3Nj9Kbu0Q19Zk7fJni5y26kg8Pi4igJfLbu1k/zAutvz1Qg8P/EJ7ZjZwifW8UkBk1JsXPSlfAhxn9D1bjs1yu36dVLEJBRbaH0ReIjAKwU+XD1uu7pum//XiF2gFbEX6AcajUaj0Wg0Go1Go9Fo9OUftXI4q4QWr+UAAAAASUVORK5CYII=" InformativeScreenshot="9cb453a64294b32a5eb9c89494a96fc9.jpg" Reference="Gr4sVF0ic06EuYhn7Nwf4g/AWJ3YdKyxUOTEw8jpX18gQ" Selector="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" Url="https://transit.yahoo.co.jp/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
