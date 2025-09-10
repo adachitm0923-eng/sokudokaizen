@@ -98,19 +98,19 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1379,1301" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1379,1303" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Edge 乗換案内、時刻表、運行情報 - Yahoo!路線情報" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1278" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="082dddfe-18b0-41fe-941e-19456791828b" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Edge 乗換案内、時刻表、運行情報 - Yahoo!路線情報" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1280" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="082dddfe-18b0-41fe-941e-19456791828b" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="450,1037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="450,1039" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="TextString" />
               <Variable x:TypeArguments="x:Boolean" Name="検出された要素" />
@@ -120,12 +120,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="赤池" Version="V5">
+            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="今池" Version="V5">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp" CVScreenId="e625e3ea-569c-4265-b68f-d9608b8f726a" ContentHash="mae1nT4eik-xMHCf9RBv0w" DesignTimeRectangle="282, 470, 228, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='query_input' tag='INPUT' type='text' idx='1' /&gt;" Guid="39738a82-0d1c-4efc-810b-249587b48df7" InformativeScreenshot="5f1ce8a5686cee0675ba90fd6b136d48.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/Xrc0g4pyCEWc9okQVyZYKw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NSetText.Target>
             </uix:NSetText>
-            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="名古屋" Version="V5">
+            <uix:NSetText DisplayName="テキストを設定 'INPUT query_input(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" Text="伏見" Version="V5">
               <uix:NSetText.Target>
                 <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp" CVScreenId="c66061bb-94d9-439e-bd66-a0064273b89a" ContentHash="EFSsWRYKA0OJ8T_6T_zFMg" DesignTimeRectangle="597, 470, 228, 36" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='query_input' name='to' tag='INPUT' type='text' /&gt;" Guid="5453e194-ca42-4ea2-93c9-7ae3d4960a8f" InformativeScreenshot="e39cf07b37bdb84f741a28ec20aa4ef2.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/dOLuj0J2HkmHfxp88MrEwQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='乗換案内、時刻表、運行情報 - Yahoo!路線情報' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NSetText.Target>
@@ -145,13 +145,12 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NGetText DelayBefore="3" DisplayName="テキストを取得" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" ScrapingOptions="None" TextString="[TextString]" Version="V5">
+            <uix:NGetText DisplayName="テキストを取得 '240円'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="082dddfe-18b0-41fe-941e-19456791828b" ScrapingMethod="TextAttribute" ScrapingOptions="None" TextString="[TextString]" Version="V5">
               <uix:NGetText.Target>
-                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp/search/result" CVScreenId="6fb031ea-ab6b-46ed-87e0-d33eb34eeabf" ContentHash="U0HKJ__CeUuxbG1ORm5t7Q" DesignTimeRectangle="839, 371, 46, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='mark' parentid='rsltlst' tag='SPAN' type='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;" Guid="862b6f56-9035-493d-97ce-b34894c8403f" ImageBase64="" InformativeScreenshot="49bb2143eb3b3a7cbe19faf8e432dd70.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/GQ4ze0vw3kurSqEu56RugQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='今池(愛知県)から伏見(愛知県)への乗換案内 - Yahoo!路線情報' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                <uix:TargetAnchorable BrowserURL="transit.yahoo.co.jp/search/result" CVScreenId="1610af28-c43c-48d2-bf11-63f529b16fe5" ContentHash="Fvt0UyMXWEiZYyru9DlzXQ" CvType="AnyWordGroup" DesignTimeRectangle="799, 563, 86, 40" ElementType="ListItem" FullSelectorArgument="&lt;webctrl class='fare' parentid='rsltlst' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl class='fare' parentid='rsltlst' tag='LI' type='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;" Guid="657dec66-6954-4e7a-b06f-4ce2804ece6e" ImageBase64="" InformativeScreenshot="a16018028045684940b2c9129292603a.png" Reference="Gr4sVF0ic06EuYhn7Nwf4g/GQ4ze0vw3kurSqEu56RugQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='黒川(神奈川県)から栄(愛知県)への乗換案内 - Yahoo!路線情報' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                      <uix:Target CVScreenId="e8328be4-7add-4605-8df6-55bd614686c0" DesignTimeRectangle="498, 364, 73, 39" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='rsltlst' tag='A' type='' class='' aaname='ルート1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='ルート1' /&gt;" Guid="a633b1aa-7e0b-4f30-a37b-1fed3992b45a" SearchSteps="FuzzySelector" />
-                      <uix:Target CVScreenId="e8328be4-7add-4605-8df6-55bd614686c0" CvTextArea="564, 334, 92, 21" CvTextArgument="DIAB3*" CvType="Text" DesignTimeRectangle="539, 333, 115, 27" FuzzySelectorArgument="&lt;webctrl parentid='tabflt' tag='SPAN' type='' class='' aaname='到着時刻順' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='早到着時刻順' /&gt;" Guid="789d5d01-f2e5-4d87-8d5a-e50dfaa5361a" SearchSteps="FuzzySelector, CV" />
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="1610af28-c43c-48d2-bf11-63f529b16fe5" DesignTimeRectangle="498, 564, 73, 39" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='rsltlst' tag='A' aaname='ルート1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='rsltlst' tag='A' aaname='ルート1' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='ルート1' /&gt;" Guid="7b75bb8d-6016-4cbe-93fb-1cf17ef0d7f5" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
